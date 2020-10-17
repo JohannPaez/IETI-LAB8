@@ -10,12 +10,18 @@
 
 - [ReactJS](https://es.reactjs.org/) Framework para aplicaciones web.
 
-## Comandos 
+## Comandos Backend
+  Para compilar el proyecto: ```gradle build```
+  
+  Para ejecutar el proyecto: ```gradle bootRun```  
+      
+## Comandos Frontend
   Para descargar las dependencias: ```npm install```
   
   Para ejecutar la aplicación: ```npm start```  
   
   **IMPORTANTE:** Para poder utilizar el aplicativo es necesario instalar las dependencias primero con el comando **npm install**.
+  
 ## Datos de Logeo
 
 **Correo**: test@mail.com
