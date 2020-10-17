@@ -1,3 +1,47 @@
+# IETI-LAB8
+
+
+
+## Este proyecto fue construido con:
+
+- [Gradle](https://gradle.org/) Administrador de dependencias.
+
+- [Spring](https://spring.io/) Framework para desarrollar aplicaciones web.
+
+- [ReactJS](https://es.reactjs.org/) Framework para aplicaciones web.
+
+## Comandos 
+  Para descargar las dependencias: ```npm install```
+  
+  Para ejecutar la aplicación: ```npm start```  
+  
+  **IMPORTANTE:** Para poder utilizar el aplicativo es necesario instalar las dependencias primero con el comando **npm install**.
+## Datos de Logeo
+
+**Correo**: test@mail.com
+
+**Contraseña**: password
+
+**Nota**: Se deben utilizar estos datos de logeo, ya que la función de registro aún no está disponible.
+
+## Despliegue de la Aplicación
+
+[Firebase Link 1](https://taskplanner-ieti-lab08.web.app/)
+
+[Firebase Link 2](https://taskplanner-ieti-lab08.firebaseapp.com/)
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://mighty-brushlands-30483.herokuapp.com/)
+
+### Verificación de que la aplicación está protegida
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://mighty-brushlands-30483.herokuapp.com/api/test)
+
+## Enunciado
+El enunciado del laboratorio está disponible [aquí](https://github.com/ieti-eci/2.2-spring-boot-secure-api-react).
+
+## Autor
+Johann Sebastian Páez Campos - Laboratorio 08 IETI 17/10/2020
+
 # 2.2 Spring Boot Secure API
 
 **Goals**
@@ -22,11 +66,17 @@ http://localhost:8080/api/test
 
 Then try to locate the code fragment where the exception is thrown.
 
+![](Images/Image1.png)
+
 4. Comment the line 13 *@Bean* on the *SpringBootSecureApiApplication* class. Re-run the project and go to the endpoint again:
 
 http://localhost:8080/api/test
+
+![](Images/Image2.png)
                     
-Why do you think it works now? Discuss your findings with your classmates.                    
+Why do you think it works now? Discuss your findings with your classmates.
+
+**Funciona ahora, debido a que no está haciendo la inyección de la configuración de filtros, la cual no permite el acceso cuando el header de autenticación no se encuentra o no lo han incluido**.
                     	
 5. Implement the logic to verify the user's credentials on the *UserController* and the *UserServiceImpl* classes.
 
